@@ -8,12 +8,12 @@
     height: 21rem;
     z-index: -2;
     background-color: #1D3557;
-    width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     top: 14%;
+    padding: 10px;
 }
 
 .presentation-container-divider-texts {

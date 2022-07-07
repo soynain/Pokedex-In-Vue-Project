@@ -7,12 +7,13 @@
 
 .nav-elements {
     background-image: linear-gradient(180deg, #F1FAEE, #E63946);
-    width: 100%;
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .nav-items {
