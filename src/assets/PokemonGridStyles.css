@@ -1,0 +1,80 @@
+.grid-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: auto;
+}
+
+.grid-card-container {
+    padding: 10px;
+    display: grid;
+    grid-auto-rows: 13rem;
+    grid-template-columns: repeat(8, 3fr);
+    height: auto;
+    width: 75%;
+    
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.pokemon-card {
+    border-radius:0 20px 0 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid#457B9D;
+}
+
+.pokemon-card:hover{
+    box-shadow: 0px 0px 5px 5px #457B9D;
+}
+
+.pokemon-card-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.poke-img {
+    width: 70px;
+    height: 70px;
+}
+
+.pokemon-resume {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poke-details-btn-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.pokemon-details-btn {
+    text-align: center;
+    width: 50%;
+    background-color: #E63946;
+    color: #F1FAEE;
+    margin-bottom: 10px;
+    border-radius: 0 10px 0 10px;
+    margin-left: 20px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.pokeball-btn-img {
+    position: absolute;
+    left: 11.5px;
+    width: 35px;
+    height: 35px;
+    z-index: 1;
+    margin-bottom: 10px;
+    cursor: pointer;
+}

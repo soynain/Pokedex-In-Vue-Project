@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import navBar from './components/navBar.vue';
+import NavBar from './components/NavBar.vue';
 import PresentationComponentVue from './components/PresentationComponent.vue';
-const navBody=createApp(navBar);
+const navBody=createApp(NavBar);
 const presentationContainerBody=createApp(PresentationComponentVue);
 const appBody=createApp(App);
 
