@@ -7,7 +7,8 @@ The API I'm using is widely known, is for free, doesnt have bandwitch limit, the
 ![image](https://user-images.githubusercontent.com/78714792/177650378-58495a75-5e38-4434-b268-a04d924c5e71.png)
 
 
-##How to setup the project
+
+## How to setup the project
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
