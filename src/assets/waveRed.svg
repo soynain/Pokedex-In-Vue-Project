@@ -2,7 +2,7 @@
         class="transition duration-300 ease-in-out delay-150">
         <style>
         .path-1{
-animation:pathAnim-1 14s;
+animation:pathAnim-1 4s;
 animation-timing-function: linear;
 animation-iteration-count: infinite;
 }

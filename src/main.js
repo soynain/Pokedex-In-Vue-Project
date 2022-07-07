@@ -1,7 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import navBar from './components/navBar.vue';
-
-const appBody=createApp(App);
+import PresentationComponentVue from './components/PresentationComponent.vue';
 const navBody=createApp(navBar);
-navBody.mount("#app")
+const presentationContainerBody=createApp(PresentationComponentVue);
+const appBody=createApp(App);
+
+presentationContainerBody.mount('#presentation-container');
+navBody.mount('#nav-content')

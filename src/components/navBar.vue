@@ -1,14 +1,10 @@
 <style>
 @import'../assets/fontsAsset.css';
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-#logo{
+@import '../assets/commonStyles.css';
+#logo {
     height: 35px;
 }
+
 .nav-elements {
     background-image: linear-gradient(180deg, #F1FAEE, #E63946);
     width: 100%;
@@ -54,7 +50,7 @@ li {
     bottom: 0;
 }
 </style>
-<template>
+<template class="body">
     <div class="nav-elements">
         <img id="logo" src="./icons/pokedex-logo.png">
         <div class="nav-items">
