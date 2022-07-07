@@ -1,0 +1,60 @@
+.searchBar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    height: 15rem;
+  }
+  
+  #header-for-search-bar {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.4rem;
+  }
+  
+  #search-bar-instruction {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .search-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:2.4rem;
+  }
+  
+  .search-container:hover input{
+    outline: 3px solid #f4099d;
+    box-shadow: 0px 0px 5px 5px #f4099d;
+  }
+  
+  .search-container:hover button{
+    outline: 3px solid #f4099d;
+    box-shadow: 0px 0px 5px 5px #f4099d;
+  }
+  
+  #search-bar{
+    height:2.4rem;
+    width: 50%;
+    outline: 2px solid #A8DADC;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  #search-bar::placeholder{
+    font-size: large;
+  }
+  
+  #search-pokemon-btn{
+    height:2.5rem;
+    outline: 2px solid #A8DADC;
+    border-top-left-radius: 0;
+    border: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }

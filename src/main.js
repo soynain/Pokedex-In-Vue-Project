@@ -8,3 +8,4 @@ const appBody=createApp(App);
 
 presentationContainerBody.mount('#presentation-container');
 navBody.mount('#nav-content')
+appBody.mount('#body-content')

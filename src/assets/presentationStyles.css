@@ -1,0 +1,47 @@
+.presentation-container-divider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 21rem;
+    z-index: -2;
+    background-color: #1D3557;
+    width: 100%;
+    padding-top: 2.5rem; /*la altura de las dos horas menos 5*/
+}
+
+
+.presentation-container-divider-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.presentation-container-divider-texts h1 {
+    color: #F1FAEE;
+    font-size:2rem;
+}
+
+#introduction-text-margin{
+    margin-top: 4.6rem; /*para quitar espacio del space-around en el bottom*/
+}
+
+.presentation-container-divider-carrousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.introduction-text {
+    width: 50%;
+    color: #F1FAEE;
+    text-align: center;
+    word-wrap: break-word;
+    border: 1px solid white;
+}
+
