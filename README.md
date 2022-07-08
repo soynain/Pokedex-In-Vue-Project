@@ -8,7 +8,9 @@ The API I'm using is widely known, is for free, doesnt have bandwitch limit, the
 
 ## Interfaces:
 ![image](https://user-images.githubusercontent.com/78714792/177881181-3a09bb69-ce0d-427c-8ec9-14a6975f9714.png)
-![image](https://user-images.githubusercontent.com/78714792/177881230-ef294aaf-7641-4b76-b2c6-f52e5770c5a4.png)
+![image](https://user-images.githubusercontent.com/78714792/178062214-40b372c3-b708-40d5-be7e-77bea06a7d56.png)
+![image](https://user-images.githubusercontent.com/78714792/178062248-d1a8b296-19cb-41a1-b08a-722f08a46b60.png)
+
 
 
 ## How to setup the project
