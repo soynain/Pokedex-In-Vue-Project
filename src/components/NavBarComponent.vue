@@ -1,3 +1,7 @@
+<script setup>
+import NavBarItemsComponent from './NavBarItemsComponent.vue';
+
+</script>
 <style>
 @import'../assets/fontsAsset.css';
 @import '../assets/commonStyles.css';
@@ -6,13 +10,7 @@
 <template class="body">
     <div class="nav-elements">
         <img id="logo" src="./icons/pokedex-logo.png">
-        <div class="nav-items">
-            <ul>
-                <li>Start</li>
-                <li>Pokemons</li>
-                <li>About us</li>
-            </ul>
-        </div>
+        <NavBarItemsComponent/>
     </div>
 
     <img class="waveGroup" id="firstWave" src="../assets/waveRed.svg">

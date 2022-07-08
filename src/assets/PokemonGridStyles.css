@@ -8,13 +8,13 @@
 .grid-card-container {
     padding: 10px;
     display: grid;
-    grid-auto-rows: 13rem;
-    grid-template-columns: repeat(8, 3fr);
+    grid-auto-rows: 15rem;
+    grid-template-columns: repeat(7, 9.7rem);
     height: auto;
-    width: 75%;
-    
+    width: 85%;
     column-gap: 10px;
     row-gap: 10px;
+    justify-content: center;
 }
 
 .pokemon-card {
@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid#457B9D;
+    border: 1px solid#A8DADC;
 }
 
 .pokemon-card:hover{
@@ -71,7 +71,7 @@
 
 .pokeball-btn-img {
     position: absolute;
-    left: 11.5px;
+    left: 30px;
     width: 35px;
     height: 35px;
     z-index: 1;

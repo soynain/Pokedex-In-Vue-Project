@@ -1,0 +1,47 @@
+#footer-header {
+    text-align: center;
+    background-color: #1D3557;
+    font-weight:900 !important;
+}
+
+#footer-header,
+#header-container {
+    padding: 5px;
+}
+
+#header-container {
+    background-color: #1D3557;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-container>span:not(#header-container>span:last-child) {
+    margin-left: 2px;
+    margin-right: 25px;
+}
+
+#header-container>span{
+    font-weight:900 !important;
+}
+
+#header-container>span,
+#footer-header {
+    font-weight: 500;
+    color: #F1FAEE;
+}
+
+#header-container a:visited,#header-container a:link{
+   color: #F1FAEE;
+   text-decoration: none;
+}
+#header-container a:active{
+    text-decoration: underline !important;
+}
+
+.footer-icons {
+    width: 30px;
+    height: 30px;
+}
