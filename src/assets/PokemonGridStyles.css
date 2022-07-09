@@ -78,3 +78,90 @@
     margin-bottom: 10px;
     cursor: pointer;
 }
+
+@media (min-width: 851px) and (max-width: 1200px) {
+    .grid-card-container {
+        padding: 10px;
+        display: grid;
+        grid-auto-rows: 15rem;
+        grid-template-columns: repeat(5, 9.7rem);
+        height: auto;
+        width: 75%;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: center;
+    }
+  }
+
+  @media (min-width: 701px) and (max-width: 850px) {
+    .grid-card-container {
+        padding: 10px;
+        display: grid;
+        grid-auto-rows: 15rem;
+        grid-template-columns: repeat(4, 9.7rem);
+        height: auto;
+        width: 65%;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: center;
+    }
+  }
+
+  @media (min-width: 521px) and (max-width: 700px) {
+    .grid-card-container {
+        padding: 10px;
+        display: grid;
+        grid-auto-rows: 15rem;
+        grid-template-columns: repeat(3, 9.7rem);
+        height: auto;
+        width: 55%;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: center;
+    }
+  }
+
+  @media (min-width: 355px) and (max-width: 520px) {
+    .grid-card-container {
+        padding: 10px;
+        display: grid;
+        grid-auto-rows: 15rem;
+        grid-template-columns: repeat(2, 9.7rem);
+        height: auto;
+        width: 45%;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: center;
+    }
+  }
+
+  @media (max-width: 354px) {
+    .grid-card-container {
+        padding: 10px;
+        display: grid;
+        grid-auto-rows: 15rem;
+        grid-template-columns: 12rem;
+        height: auto;
+        width: 35%;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: center;
+    }
+    .pokemon-resume {
+        margin-bottom: 10px;
+    }
+
+    .pokeball-btn-img {
+        position: absolute;
+        left: 36px;
+        width: 36px;
+        height: 36px;
+        z-index: 1;
+    }
+
+    .pokemon-details-btn {
+        margin-left: 0px;
+        height: 90%;
+    }
+
+  }

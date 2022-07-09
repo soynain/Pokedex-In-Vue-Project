@@ -4,10 +4,12 @@
     justify-content: space-between;
     height: 21rem;
     z-index: -2;
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./presentation-bg.png');
-    background-size: contain;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./presentation-bg.png') no-repeat;
+    background-size: 100% 100%;
     width: 100%;
-    padding-top: 2.5rem; /*la altura de las dos horas menos 5*/
+    padding-top: 4rem;
+    /*la altura de las dos olas menos 5*/
+    padding-bottom: 2rem;
 }
 
 .presentation-container-divider-texts {
@@ -21,11 +23,13 @@
 
 .presentation-container-divider-texts h1 {
     color: #F1FAEE;
-    font-size:2rem;
+    font-size: 2rem;
 }
 
-#introduction-text-margin{
-    margin-top: 4.6rem; /*para quitar espacio del space-around en el bottom*/
+#introduction-text-margin {
+    margin-top: 4.6rem;
+    /*para quitar espacio del space-around en el bottom*/
+    width: 50%;
 }
 
 .presentation-container-divider-carrousel {
@@ -37,19 +41,88 @@
     height: 100%;
 }
 
+.transitive-container-helper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
 .introduction-text {
     width: 50%;
     color: #F1FAEE;
     text-align: center;
     word-wrap: break-word;
 }
-.img-container{
-    width:100%;height:200px;border: 1px solid white;
+
+.img-container {
+    width: 100%;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#img-slider{
-    width:200px;height:200px;
+
+#img-slider {
+    width: 200px;
+    height: 200px;
 }
 
+@media (min-width:760px) and (max-width:860px) {
+    .presentation-container-divider {
+        padding-top: 5rem;
+    }
+
+    #introduction-text-margin {
+        width: 90%;
+    }
+
+    .introduction-text {
+        width: 90%;
+    }
+}
+
+@media (max-width:759px) {
+    .presentation-container-divider {
+        padding-top: 5rem;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .presentation-container-divider-texts {
+        width: 100%;
+        height: auto;
+        justify-content: end;
+    }
+
+    .presentation-container-divider-texts h1 {
+        margin-bottom: 1px;
+    }
+
+    #introduction-text-margin {
+        width: 90%;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .introduction-text {
+        width: 90%;
+    }
+}
+
+@media (max-width:386px){
+    .presentation-container-divider-texts h1 {
+        text-align:center
+    }
+}
+
+@media(max-width:423px){
+    #img-slider {
+        width: 130px;
+        height: 130px;
+    }
+}

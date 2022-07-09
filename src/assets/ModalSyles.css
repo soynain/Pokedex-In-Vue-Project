@@ -1,0 +1,13 @@
+.modalbody {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#00000045, #00000045);
+    position:fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
