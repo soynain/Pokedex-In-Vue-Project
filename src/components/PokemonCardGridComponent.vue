@@ -3,9 +3,7 @@
     <div class="pokemon-card">
         <div class="pokemon-resume">
             <header class="pokemon-card-header">Pikachu</header>
-            <img class="poke-img"
-                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg"
-                alt="">
+            <img class="poke-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg">
             <span><b>Type: </b>electric</span>
             <span><b>Weight: </b>60</span>
             <span><b>Height: </b>4</span>

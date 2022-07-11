@@ -9,7 +9,6 @@ import PokemonModal from './components/PokemonModal.vue';
 @import './assets/commonStyles.css';
 </style>
 <template>
-<h1>{{firstName}}</h1>
     <PokemonModal/>
     <SearchBarComponent />
     <PokemonGridComponent />
