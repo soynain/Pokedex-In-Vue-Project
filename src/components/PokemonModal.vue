@@ -1,6 +1,11 @@
 <script setup>
+import { inject } from "vue";
 import PokemonChartStats from "./PokemonChartStats.vue";
-
+const modalDisplay=inject('modalDisplay');
+console.log(modalDisplay)
+const closePokemonInfoModal=()=>{
+    modalDisplay.value=false;
+};
 </script>
 <style>
 @import '../assets/fontsAsset.css';
@@ -10,11 +15,13 @@ import PokemonChartStats from "./PokemonChartStats.vue";
 <template>
     <div class="modalbody">
         <section class="more-info-card">
-            <header id="pokemon-card-name">Pikachu</header>
+            <section id="basic-data-container">
+                <header id="pokemon-card-name">Pikachu</header>
+            <img @click="closePokemonInfoModal" id="close-modal" src="../components/icons/cancel.png" >
+            </section>
             <section class="pokemon-basic-stats">
                 <aside class="poke-img-cont">
-                    <img
-                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg">                 
                 </aside>
                 <aside class="poke-data-stats">
                     <span><b>Type: </b>electric</span>

@@ -55,7 +55,7 @@ export default {
                 datasets: [{
                     backgroundColor: (ctx) => {
               const canvas = ctx.chart.ctx;
-              const gradient = canvas.createLinearGradient(0,0,0,360);
+              const gradient = canvas.createLinearGradient(150,90,700,90);
 
               gradient.addColorStop(0, '#E63946');    
               gradient.addColorStop(.5, '#A8DADC');                        

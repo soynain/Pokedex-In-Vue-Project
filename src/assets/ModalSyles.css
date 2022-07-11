@@ -21,13 +21,26 @@
     border-radius: 15px;
     padding: 10px;
 }
+#basic-data-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#close-modal{
+    width: 35px; height:35px;
+    cursor: pointer;
+}
 
 #pokemon-card-name{
-    text-align: center;
     font-size: xx-large;
     font-weight: bolder;
     font-style: italic;
     padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .pokemon-basic-stats{
