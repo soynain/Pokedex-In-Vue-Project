@@ -11,6 +11,8 @@ The API I'm using is widely known, is for free, doesnt have bandwitch limit, the
 -The banner located down the header has a slider of images.
 
 ![image](https://user-images.githubusercontent.com/78714792/178098964-8f496ada-6c15-4f38-801e-9c93d22203ae.png)
+![image](https://user-images.githubusercontent.com/78714792/178173156-4bd232d9-b914-4fc9-bada-d6d7bfc64ff4.png)
+
 
 -Also responsive:
 
