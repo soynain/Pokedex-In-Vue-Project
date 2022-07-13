@@ -1,13 +1,16 @@
-
+<script setup>
+const props = defineProps(['name', 'weight', 'height', 'base_experience', 'sprites']);
+//console.log(props.sprites.other.dream_world.front_default);
+</script>
 <template>
     <div class="pokemon-card">
         <div class="pokemon-resume">
-            <header class="pokemon-card-header">Pikachu</header>
-            <img class="poke-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg">
-            <span><b>Type: </b>electric</span>
-            <span><b>Weight: </b>60</span>
-            <span><b>Height: </b>4</span>
-            <span><b>Base XP: </b>112</span>
+            <header class="pokemon-card-header">{{ name }}</header>
+            <img class="poke-img" :src=sprites.other.dream_world.front_default>
+            <span><b>Type: </b>NULL</span>
+            <span><b>Weight: </b>{{ weight }}</span>
+            <span><b>Height: </b>{{ height }}</span>
+            <span><b>Base XP: </b>{{ base_experience }}</span>
         </div>
         <div class="poke-details-btn-container">
             <img class="pokeball-btn-img" src="./icons/pokeball.png">
