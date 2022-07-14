@@ -14,6 +14,18 @@ The API I'm using is widely known, is for free, doesnt have bandwitch limit, the
 ![image](https://user-images.githubusercontent.com/78714792/178349661-85fffdcc-2b3f-40f8-8e1a-e1292ec66ed8.png)
 
 
+## Each modal displays it's own Pokemon image and stats, everything is correctly consumed from the api,
+there are some pokemons that dont have an image or fan art, it's a detail that I'm not correcting
+because of laziness and because Front end's not my focus right now.
+
+![image](https://user-images.githubusercontent.com/78714792/178902082-6d8f585a-8021-4ddf-ade0-ec102443701b.png)
+
+##I must make a function or some sort of handler to get smaller images, or get different sprites, with lower resolution,
+yeah I can do that but...meeeeh :p
+
+![image](https://user-images.githubusercontent.com/78714792/178902195-e5108269-1bd4-4e3d-9e74-4b82f87c1e94.png)
+
+
 
 #Also responsive:
 
