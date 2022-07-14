@@ -1,22 +1,28 @@
 <script setup>
-import { inject } from 'vue';
+import { inject, onBeforeMount, onMounted } from 'vue';
 let dataFnAndPaginateNumbers = inject('pokemonJsons');
-let refreshFn = inject('refreshFn');
-console.log(refreshFn);
+let [refreshFn,goBackButtonDisplay,notDisplayButtonsWhileReloadingGrid] = inject('refreshFn');
+
 
 const paginationNext = () => {
-    dataFnAndPaginateNumbers[2].value *= 2; //range end is multiplied by 2 because we display 21 cards per page
-    dataFnAndPaginateNumbers[1].value += 7;
-    console.log('new values next: ', dataFnAndPaginateNumbers[1], ' ', dataFnAndPaginateNumbers[2]);
+    notDisplayButtonsWhileReloadingGrid.value=false;
+    dataFnAndPaginateNumbers[1].value=dataFnAndPaginateNumbers[2].value+1;
+    dataFnAndPaginateNumbers[2].value +=21; // we display 21 cards per page 
+    console.log('new values next: ', dataFnAndPaginateNumbers[1].value, ' ', dataFnAndPaginateNumbers[2].value);
+    if(dataFnAndPaginateNumbers[1].value==22)goBackButtonDisplay.value=true;
     refreshFn();
 };
 
 const paginationBack = () => {
-    dataFnAndPaginateNumbers[2].value = dataFnAndPaginateNumbers[2].value == 21 ? dataFnAndPaginateNumbers[2].value = 21 : dataFnAndPaginateNumbers[2].value /= 2;
-    dataFnAndPaginateNumbers[1].value = dataFnAndPaginateNumbers[1].value == 7 ? dataFnAndPaginateNumbers[1].value = 7 : dataFnAndPaginateNumbers[1].value /= 2;
-    console.log('new values back: ', dataFnAndPaginateNumbers[1], ' ', dataFnAndPaginateNumbers[2]);
+        notDisplayButtonsWhileReloadingGrid.value=false;
+    dataFnAndPaginateNumbers[2].value = dataFnAndPaginateNumbers[2].value == 21 ? dataFnAndPaginateNumbers[2].value = 21 : dataFnAndPaginateNumbers[2].value -=21;
+    dataFnAndPaginateNumbers[1].value -=21;
+    if(dataFnAndPaginateNumbers[1].value==1)goBackButtonDisplay.value=false; 
+    console.log('new values back: ', dataFnAndPaginateNumbers[1].value, ' ', dataFnAndPaginateNumbers[2].value);
     refreshFn();
 };
+
+
 </script>
 <style>
 .buttons-container,
@@ -37,11 +43,11 @@ const paginationBack = () => {
     cursor: pointer;
 }
 
-.btn-navigation-group:nth-child(1) {
+#btn-back {
     border-radius: 20px 0 0 20px;
 }
 
-.btn-navigation-group:nth-child(2) {
+#btn-next {
     border-radius: 0 20px 20px 0;
 }
 
@@ -54,9 +60,9 @@ const paginationBack = () => {
 </style>
 <template>
     <div class="buttons-container">
-        <div class="container-for-end-justify">
-            <button @click="paginationBack()" class="btn-navigation-group">Go back</button>
-            <button @click="paginationNext()" class="btn-navigation-group">Next</button>
+        <div v-if="notDisplayButtonsWhileReloadingGrid" class="container-for-end-justify">
+            <button id="btn-back" v-if="goBackButtonDisplay" @click="paginationBack()" class="btn-navigation-group">Go back</button>
+            <button id="btn-next" @click="paginationNext()" class="btn-navigation-group">Next</button>
         </div>
     </div>
 </template>

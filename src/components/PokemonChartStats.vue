@@ -5,13 +5,21 @@
 
 <script>
 import { Bar } from 'vue-chartjs'
+import { inject } from 'vue'
 import { Chart as ChartJS, Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale } from 'chart.js'
 ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
 
 export default {
+    setup() {
+        const chartStadistics = inject('chartStadistics');
+        return { chartStadistics };
+    },mounted(){
+        console.log(this.chartStadistics);
+    },
     name: 'BarChart',
     components: { Bar },
     props: {
+        //    aditionalInfo:Array,
         chartId: {
             type: String,
             default: 'bar-chart'
@@ -54,16 +62,21 @@ export default {
                 ],
                 datasets: [{
                     backgroundColor: (ctx) => {
-              const canvas = ctx.chart.ctx;
-              const gradient = canvas.createLinearGradient(150,90,700,90);
+                        const canvas = ctx.chart.ctx;
+                        const gradient = canvas.createLinearGradient(150, 90, 700, 90);
 
-              gradient.addColorStop(0, '#E63946');    
-              gradient.addColorStop(.5, '#A8DADC');                        
-              gradient.addColorStop(1, '#1D3557');
+                        gradient.addColorStop(0, '#E63946');
+                        gradient.addColorStop(.5, '#A8DADC');
+                        gradient.addColorStop(1, '#1D3557');
 
-              return gradient;
-            },
-                    data: [40, 20, 12, 39, 10, 40]
+                        return gradient;
+                    },
+                    data: [this.chartStadistics[0].base_stat, 
+                    this.chartStadistics[1].base_stat, 
+                    this.chartStadistics[2].base_stat, 
+                    this.chartStadistics[3].base_stat, 
+                    this.chartStadistics[4].base_stat, 
+                    this.chartStadistics[5].base_stat]
                 }]
             },
             chartOptions: {
